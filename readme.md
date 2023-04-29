@@ -1,4 +1,4 @@
-# SGPA Calculator
+# GPATool - SGPA Calculator
 
 This project is a simple web application that allows students to calculate their Semester Grade Point Average (SGPA) based on their expected grades and credit scores for each course in a given semester. The user inputs the number of courses they are taking, and the application dynamically generates input fields for each course's credit score and expected grade. Upon submission, the application calculates the SGPA and displays the result.
 
