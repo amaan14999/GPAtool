@@ -14,14 +14,14 @@ calculateButton.addEventListener("click", function () {
     sum1 += credit[i];
   }
   const sgpa = (sum / sum1).toFixed(3);
-  coursesDiv.innerHTML = `<p>The expected SGPA is ${sgpa}</p>`;
+  coursesDiv.innerHTML = `<p>Expected SGPA: ${sgpa}</p>`;
 });
 
 numCoursesInput.addEventListener("change", function () {
   const n = parseInt(numCoursesInput.value);
   let coursesHtml = "";
   for (let i = 1; i <= n; i++) {
-    coursesHtml += `<label for="credit${i}">Enter the credit score of course ${i}:</label>`;
+    coursesHtml += `<label for="credit${i}">Enter the credit points of course ${i}:</label>`;
     coursesHtml += `<input type="number" id="credit${i}" step="0.01">`;
     coursesHtml += `<label for="grade${i}">Enter the expected grade of course ${i}:</label>`;
     coursesHtml += `<select id="grade${i}">`;
