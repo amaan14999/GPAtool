@@ -1,6 +1,7 @@
 const numCoursesInput = document.getElementById("numCourses");
 const coursesDiv = document.getElementById("courses");
 const calculateButton = document.getElementById("calculateButton");
+const resetButton = document.getElementById("resetButton");
 calculateButton.addEventListener("click", function () {
   const n = parseInt(numCoursesInput.value);
   const credit = new Array(n);
@@ -35,4 +36,9 @@ numCoursesInput.addEventListener("change", function () {
     coursesHtml += `</select><br><br>`;
   }
   coursesDiv.innerHTML = coursesHtml;
+});
+
+resetButton.addEventListener("click", function () {
+  numCoursesInput.value = "";
+  coursesDiv.innerHTML = "";
 });
