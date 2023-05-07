@@ -15,6 +15,7 @@ To run the application, simply open the `index.html` file in a web browser.
 1. Enter the number of courses in the current semester.
 2. For each course, enter the credit score and expected grade.
 3. Click the "Calculate" button to calculate the expected SGPA.
+4. Click the "Reset" button to reset the input data
 
 ## Contributing
 
