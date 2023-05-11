@@ -54,4 +54,5 @@ resetButton.addEventListener("click", function () {
   numCoursesInput.value = "";
   coursesDiv.innerHTML = "";
   nextButton.innerText="Next"
+  nextButton.addEventListener("click", nextB);
 });
