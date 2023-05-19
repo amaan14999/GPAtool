@@ -3,7 +3,6 @@ const coursesDiv = document.getElementById("courses");
 const nextButton = document.getElementById("nextButton");
 const resetButton = document.getElementById("resetButton");
 
-
 nextButton.addEventListener("click", nextB);
 
 function nextB() {
@@ -23,12 +22,11 @@ function nextB() {
     coursesHtml += `<option value="4">D</option>`;
     coursesHtml += `</select><br><br>`;
   }
-  nextButton.innerText="Calculate"
-  coursesDiv.innerHTML = coursesHtml;  
+  nextButton.innerText = "Calculate";
+  coursesDiv.innerHTML = coursesHtml;
   nextButton.removeEventListener("click", nextB);
   nextButton.addEventListener("click", calB);
 }
-
 
 function calB() {
   const n = parseInt(numCoursesInput.value);
@@ -44,15 +42,21 @@ function calB() {
   }
   const sgpa = (sum / sum1).toFixed(3);
   coursesDiv.innerHTML = `<p>Expected SGPA: ${sgpa}</p>`;
-  nextButton.innerText="Next"
+  nextButton.innerText = "Next";
   nextButton.removeEventListener("click", calB);
   nextButton.addEventListener("click", nextB);
 }
 
-
 resetButton.addEventListener("click", function () {
   numCoursesInput.value = "";
   coursesDiv.innerHTML = "";
-  nextButton.innerText="Next"
+  nextButton.innerText = "Next";
   nextButton.addEventListener("click", nextB);
+});
+
+numCoursesInput.addEventListener("keydown", function (event) {
+  if (event.key === "Enter") {
+    event.preventDefault();
+    nextB();
+  }
 });
