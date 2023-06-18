@@ -46,9 +46,10 @@ function calB() {
     sum1 += credit[i];
   }
   const sgpa = (sum / sum1).toFixed(3);
-  coursesDiv.innerHTML = `<p>Expected SGPA: ${sgpa}</p>`;
+  coursesDiv.innerHTML = `<p class="sgpa-text">Expected SGPA: ${sgpa}</p>`;
   nextButton.innerText = "Next";
   nextButton.removeEventListener("click", calB);
+  document.body.style.height = "100vh";
   nextButton.addEventListener("click", nextB);
 }
 
