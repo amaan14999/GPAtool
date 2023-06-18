@@ -26,6 +26,11 @@ function nextB() {
   coursesDiv.innerHTML = coursesHtml;
   nextButton.removeEventListener("click", nextB);
   nextButton.addEventListener("click", calB);
+  if (n > 3) {
+    document.body.style.height = "100%";
+  } else {
+    document.body.style.height = "100vh";
+  }
 }
 
 function calB() {
@@ -52,6 +57,7 @@ resetButton.addEventListener("click", function () {
   coursesDiv.innerHTML = "";
   nextButton.innerText = "Next";
   nextButton.addEventListener("click", nextB);
+  document.body.style.height = "100vh";
 });
 
 numCoursesInput.addEventListener("keydown", function (event) {
