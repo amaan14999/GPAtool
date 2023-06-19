@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Mono:wght@500&family=DM+Sans:wght@400;500;700&display=swap");
 body {
-  font-family: "DM sans";
+  font-family: "DM sans", sans-serif;
   margin: 0;
   padding: 0;
   height: 100vh;
