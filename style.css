@@ -38,6 +38,13 @@ label {
   margin-bottom: 10px;
   color: #fff;
 }
+hr {
+  border: solid 0.5px;
+  border-radius: 50%;
+  width: 20%;
+  background-color: #33322f;
+  opacity: 0.2;
+}
 
 input[type="number"],
 select {

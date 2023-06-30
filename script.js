@@ -21,8 +21,13 @@ function nextB() {
       coursesHtml += `<option value="6">C</option>`;
       coursesHtml += `<option value="5">C-</option>`;
       coursesHtml += `<option value="4">D</option>`;
-      coursesHtml += `</select><br><br>`;
+      coursesHtml += `</select><br>`;
+      if (i !== n) {
+        // Add <hr> except for the last iteration
+        coursesHtml += `<hr /><br>`;
+      }
     }
+
     nextButton.innerText = "Calculate";
     coursesDiv.innerHTML = coursesHtml;
     nextButton.removeEventListener("click", nextB);
