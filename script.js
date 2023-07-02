@@ -11,7 +11,7 @@ function nextB() {
     let coursesHtml = "";
     for (let i = 1; i <= n; i++) {
       coursesHtml += `<label for="credit${i}">Enter the credit points of course ${i}:</label>`;
-      coursesHtml += `<input type="number" id="credit${i}" min="0" step="0.01">`;
+      coursesHtml += `<input type="number" id="credit${i}" min="0" step="0.5">`;
       coursesHtml += `<label for="grade${i}">Enter the expected grade of course ${i}:</label>`;
       coursesHtml += `<select id="grade${i}">`;
       coursesHtml += `<option value="10">A</option>`;
